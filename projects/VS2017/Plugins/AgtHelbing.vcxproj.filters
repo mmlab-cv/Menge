@@ -21,9 +21,6 @@
     <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingAgent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingAgentContext.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingDBEntry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -33,15 +30,15 @@
     <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingSimulator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingAgentContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(PluginSrc)\AgtHelbing\Helbing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingAgent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingAgentContext.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingConfig.h">
@@ -54,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingSimulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingAgentContext.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

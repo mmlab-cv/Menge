@@ -41,14 +41,11 @@ Any questions or comments should be sent to the authors {menge,geom}@cs.unc.edu
  *	@brief		Plugin for helbing pedestrian.
  */
 
-#include "HelbingAgentContext.h"
 #include "HelbingConfig.h"
 #include "HelbingDBEntry.h"
 #include "MengeCore/PluginEngine/CorePluginEngine.h"
-#include "MengeVis/PluginEngine/VisPluginEngine.h"
 
 using Menge::PluginEngine::CorePluginEngine;
-using MengeVis::PluginEngine::VisPluginEngine;
 
 extern "C" {
 /*!
@@ -74,14 +71,5 @@ HELBING_API const char* getDescription() {
  */
 HELBING_API void registerCorePlugin(CorePluginEngine* engine) {
   engine->registerModelDBEntry(new Helbing::DBEntry());
-}
-
-/*!
- *	@brief		Registers the plug-in with the visualization plug-in engine.
- *
- *	@param		engine		A pointer to the vis engine.
- */
-HELBING_API void registerVisPlugin(VisPluginEngine* engine) {
-  engine->registerAgentContext(new Helbing::AgentContext());
 }
 }

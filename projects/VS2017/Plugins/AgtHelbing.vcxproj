@@ -109,7 +109,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>MengeCore_d.lib;MengeVis_d.lib;OpenGL32.lib;GLU32.lib;SDL2.lib;tinyxml_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>MengeCore_d.lib;tinyxml_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
       <AdditionalLibraryDirectories>$(SolutionDir)..\..\resources\win\lib\x86;$(MengeLib);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -136,7 +136,7 @@ xcopy /y $(TargetPath) $(ExeDir)\plugins\debug\
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>MengeCore_d.lib;MengeVis_d.lib;OpenGL32.lib;GLU32.lib;SDL2.lib;tinyxml_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>MengeCore_d.lib;tinyxml_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
       <AdditionalLibraryDirectories>$(SolutionDir)..\..\resources\win\lib\x64;$(MengeLib)\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -160,7 +160,7 @@ xcopy /y $(TargetPath) $(ExeDir)\plugins\debug\
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>MengeCore.lib;MengeVis.lib;OpenGL32.lib;GLU32.lib;SDL2.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>MengeCore.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)..\..\resources\win\lib\x86;$(MengeLib);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -187,7 +187,7 @@ xcopy /y $(TargetPath) $(ExeDir)\plugins\
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>MengeCore.lib;MengeVis.lib;OpenGL32.lib;GLU32.lib;SDL2.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>MengeCore.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)..\..\resources\win\lib\x64;$(MengeLib)\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -204,7 +204,6 @@ xcopy /y $(TargetPath) $(ExeDir)\plugins\
   <ItemGroup>
     <ClCompile Include="$(PluginSrc)\AgtHelbing\Helbing.cpp" />
     <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingAgent.cpp" />
-    <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingAgentContext.cpp" />
     <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingDBEntry.cpp" />
     <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingInitializer.cpp" />
     <ClCompile Include="$(PluginSrc)\AgtHelbing\HelbingSimulator.cpp" />
@@ -212,7 +211,6 @@ xcopy /y $(TargetPath) $(ExeDir)\plugins\
   <ItemGroup>
     <ClInclude Include="$(PluginSrc)\AgtHelbing\Helbing.h" />
     <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingAgent.h" />
-    <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingAgentContext.h" />
     <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingConfig.h" />
     <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingDBEntry.h" />
     <ClInclude Include="$(PluginSrc)\AgtHelbing\HelbingInitializer.h" />
